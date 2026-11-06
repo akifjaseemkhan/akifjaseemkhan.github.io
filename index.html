@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GamesByAJK</title>
+    <meta name="description" content="GamesByAJK makes small offline puzzle and casual games for Android." />
+    <link rel="icon" href="img/one-line-master.png" />
+    <style>
+      :root { color-scheme: light dark; --bg: #ffffff; --text: #1d1f26; --dim: #6b7080; --card: #f4f5f7; --line: #e3e5ea; --accent: #c77a00; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0d0e11; --text: #f4f4f6; --dim: #a2a6b0; --card: #17191e; --line: #262932; --accent: #ffb020; } }
+      * { box-sizing: border-box; }
+      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; max-width: 860px; margin: 0 auto; padding: 40px 16px 64px; line-height: 1.6; color: var(--text); background: var(--bg); }
+      h1 { font-size: 2.2rem; margin: 0; letter-spacing: 0.02em; }
+      .tag { color: var(--dim); margin: 4px 0 32px; }
+      h2 { font-size: 1.2rem; margin: 32px 0 12px; }
+      a { color: var(--accent); }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+      .game { display: flex; gap: 14px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
+      .game img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+      .game h3 { margin: 0; font-size: 1.02rem; }
+      .game p { margin: 2px 0 6px; color: var(--dim); font-size: 0.9rem; }
+      .btn { display: inline-block; font-size: 0.85rem; font-weight: 600; text-decoration: none; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--accent); }
+      .soon { font-size: 0.85rem; color: var(--dim); }
+      footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--dim); font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <h1>GamesByAJK</h1>
+    <p class="tag">Small offline puzzle and casual games for Android.</p>
+
+    <h2>Our games</h2>
+    <div class="grid">
+      <div class="game">
+        <img src="img/one-line-master.png" alt="One Line Master icon" />
+        <div>
+          <h3>One Line Master: IQ Puzzles</h3>
+          <p>Connect all dots with one line. 1,000 offline logic puzzles.</p>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.gamesbyajk.onelinemaster">Get it on Google Play</a>
+        </div>
+      </div>
+      <div class="game">
+        <img src="img/rule-flip.png" alt="Rule Flip icon" />
+        <div>
+          <h3>Rule Flip: Color Brain Teaser</h3>
+          <p>Tap the right colour fast before the rules flip.</p>
+          <span class="soon">Coming soon</span>
+        </div>
+      </div>
+      <div class="game">
+        <img src="img/troll-door.png" alt="Troll Door icon" />
+        <div>
+          <h3>Troll Door: Rage Platformer</h3>
+          <p>Reach the door... if it lets you. 1,000 trolling levels.</p>
+          <span class="soon">Coming soon</span>
+        </div>
+      </div>
+      <div class="game">
+        <img src="img/arrowwave.png" alt="ARROWWAVE icon" />
+        <div>
+          <h3>ARROWWAVE: Arrow Puzzles</h3>
+          <p>Tap arrows in the right order to clear the board.</p>
+          <span class="soon">Coming soon</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <p>Questions, feedback or business enquiries: <a href="mailto:gamesbyajk@gmail.com">gamesbyajk@gmail.com</a></p>
+
+    <footer>
+      &copy; 2026 GamesByAJK &middot; <a href="privacy/">Privacy Policy</a> &middot;
+      <a href="https://play.google.com/store/apps/developer?id=GamesByAJK">All games on Google Play</a>
+    </footer>
+  </body>
+</html>
