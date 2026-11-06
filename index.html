@@ -3,74 +3,153 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GamesByAJK</title>
-    <meta name="description" content="GamesByAJK makes small offline puzzle and casual games for Android." />
-    <link rel="icon" href="img/one-line-master.png" />
-    <style>
-      :root { color-scheme: light dark; --bg: #ffffff; --text: #1d1f26; --dim: #6b7080; --card: #f4f5f7; --line: #e3e5ea; --accent: #c77a00; }
-      @media (prefers-color-scheme: dark) { :root { --bg: #0d0e11; --text: #f4f4f6; --dim: #a2a6b0; --card: #17191e; --line: #262932; --accent: #ffb020; } }
-      * { box-sizing: border-box; }
-      body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; max-width: 860px; margin: 0 auto; padding: 40px 16px 64px; line-height: 1.6; color: var(--text); background: var(--bg); }
-      h1 { font-size: 2.2rem; margin: 0; letter-spacing: 0.02em; }
-      .tag { color: var(--dim); margin: 4px 0 32px; }
-      h2 { font-size: 1.2rem; margin: 32px 0 12px; }
-      a { color: var(--accent); }
-      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-      .game { display: flex; gap: 14px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; }
-      .game img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
-      .game h3 { margin: 0; font-size: 1.02rem; }
-      .game p { margin: 2px 0 6px; color: var(--dim); font-size: 0.9rem; }
-      .btn { display: inline-block; font-size: 0.85rem; font-weight: 600; text-decoration: none; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--accent); }
-      .soon { font-size: 0.85rem; color: var(--dim); }
-      footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--dim); font-size: 0.9rem; }
-    </style>
+    <title>GamesByAJK - Brain games you can play anywhere</title>
+    <meta name="description" content="GamesByAJK is an independent studio making quick, offline puzzle and casual games for Android." />
+    <meta property="og:title" content="GamesByAJK" />
+    <meta property="og:description" content="Quick, offline puzzle and casual games for Android." />
+    <meta property="og:image" content="https://akifjaseemkhan.github.io/img/one-line-master-banner.jpg" />
+    <meta name="theme-color" content="#0a0b0f" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>GamesByAJK</h1>
-    <p class="tag">Small offline puzzle and casual games for Android.</p>
+    <nav>
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img class="mark" src="favicon.svg" alt="" />
+          <span>GamesBy<b>AJK</b></span>
+        </a>
+        <div class="links">
+          <a href="#games">Games</a>
+          <a class="hide-sm" href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-    <h2>Our games</h2>
-    <div class="grid">
-      <div class="game">
-        <img src="img/one-line-master.png" alt="One Line Master icon" />
-        <div>
-          <h3>One Line Master: IQ Puzzles</h3>
-          <p>Connect all dots with one line. 1,000 offline logic puzzles.</p>
-          <a class="btn" href="https://play.google.com/store/apps/details?id=com.gamesbyajk.onelinemaster">Get it on Google Play</a>
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Independent game studio</span>
+        <h1>Brain games you can play <em>anywhere</em></h1>
+        <p class="lead">Quick puzzles and casual games for Android. Simple to learn, hard to put down, and they work offline.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#games">See our games</a>
+          <a class="btn btn-ghost" href="https://play.google.com/store/apps/developer?id=GamesByAJK">Google Play page</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>4</b><span>games</span></div>
+          <div class="stat"><b>4,000+</b><span>levels to play</span></div>
+          <div class="stat"><b>100%</b><span>playable offline</span></div>
         </div>
       </div>
-      <div class="game">
-        <img src="img/rule-flip.png" alt="Rule Flip icon" />
-        <div>
-          <h3>Rule Flip: Color Brain Teaser</h3>
-          <p>Tap the right colour fast before the rules flip.</p>
-          <span class="soon">Coming soon</span>
-        </div>
-      </div>
-      <div class="game">
-        <img src="img/troll-door.png" alt="Troll Door icon" />
-        <div>
-          <h3>Troll Door: Rage Platformer</h3>
-          <p>Reach the door... if it lets you. 1,000 trolling levels.</p>
-          <span class="soon">Coming soon</span>
-        </div>
-      </div>
-      <div class="game">
-        <img src="img/arrowwave.png" alt="ARROWWAVE icon" />
-        <div>
-          <h3>ARROWWAVE: Arrow Puzzles</h3>
-          <p>Tap arrows in the right order to clear the board.</p>
-          <span class="soon">Coming soon</span>
-        </div>
-      </div>
-    </div>
+    </header>
 
-    <h2>Contact</h2>
-    <p>Questions, feedback or business enquiries: <a href="mailto:gamesbyajk@gmail.com">gamesbyajk@gmail.com</a></p>
+    <section id="games">
+      <div class="wrap">
+        <div class="head">
+          <h2>Our games</h2>
+          <p>One out now on Google Play, three more on the way.</p>
+        </div>
+
+        <article class="featured">
+          <div class="art"><img src="img/one-line-master-banner.jpg" alt="One Line Master: IQ Puzzles" /></div>
+          <div class="info">
+            <span class="badge-live">Out now</span>
+            <h3>One Line Master: IQ Puzzles</h3>
+            <p>Connect every dot with a single line. Easy to start, tricky to master: 1,000 hand-checked logic puzzles that grow with you.</p>
+            <div class="chips"><span class="chip">1,000 puzzles</span><span class="chip">Offline</span><span class="chip">Logic</span></div>
+            <a class="gp" href="https://play.google.com/store/apps/details?id=com.gamesbyajk.onelinemaster">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+            </a>
+          </div>
+        </article>
+
+        <div class="grid">
+          <article class="card">
+            <div class="art"><img src="img/rule-flip-banner.jpg" alt="Rule Flip" loading="lazy" /></div>
+            <div class="body">
+              <img class="icon" src="img/rule-flip.png" alt="" loading="lazy" />
+              <h3>Rule Flip: Color Brain Teaser</h3>
+              <p>Read carefully. Tap the right colour fast, before the rules flip on you.</p>
+              <span class="soon">Coming soon</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="art"><img src="img/troll-door-banner.jpg" alt="Troll Door" loading="lazy" /></div>
+            <div class="body">
+              <img class="icon" src="img/troll-door.png" alt="" loading="lazy" />
+              <h3>Troll Door: Rage Platformer</h3>
+              <p>Reach the door... if it lets you. 1,000 levels that lie to you.</p>
+              <span class="soon">Coming soon</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="art"><img src="img/arrowwave-banner.jpg" alt="ARROWWAVE" loading="lazy" /></div>
+            <div class="body">
+              <img class="icon" src="img/arrowwave.png" alt="" loading="lazy" />
+              <h3>ARROWWAVE: Arrow Puzzles</h3>
+              <p>Tap the arrows in the right order to clear the board. 1,000 puzzles.</p>
+              <span class="soon">Coming soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="head">
+          <h2>How we make games</h2>
+          <p>Small games, made with care.</p>
+        </div>
+        <div class="values">
+          <div class="value">
+            <div class="ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0"/><path d="M3 3l18 18"/></svg>
+            </div>
+            <h3>Play offline</h3>
+            <p>No internet needed. Play on a plane, on the train or anywhere you like.</p>
+          </div>
+          <div class="value">
+            <div class="ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </div>
+            <h3>Quick sessions</h3>
+            <p>A level takes a minute. Perfect for a short break, with plenty of depth for longer play.</p>
+          </div>
+          <div class="value">
+            <div class="ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Your data stays yours</h3>
+            <p>No accounts and no sign-ups. Your progress is saved on your own phone. <a href="privacy/">Privacy policy</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <h2>Get in touch</h2>
+          <p>Feedback, bug reports or business enquiries, we read every message.</p>
+          <a class="btn btn-primary" href="mailto:gamesbyajk@gmail.com">gamesbyajk@gmail.com</a>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      &copy; 2026 GamesByAJK &middot; <a href="privacy/">Privacy Policy</a> &middot;
-      <a href="https://play.google.com/store/apps/developer?id=GamesByAJK">All games on Google Play</a>
+      <div class="wrap">
+        <span>&copy; 2026 GamesByAJK</span>
+        <span>
+          <a href="privacy/">Privacy Policy</a>
+          <a href="https://play.google.com/store/apps/developer?id=GamesByAJK">Google Play</a>
+          <a href="mailto:gamesbyajk@gmail.com">Contact</a>
+        </span>
+      </div>
     </footer>
   </body>
 </html>
